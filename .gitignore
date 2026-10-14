@@ -1,0 +1,16 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary & Office lock files
+~$*
+*.tmp
+*.log
+
+# IDE & Editor files
+.vscode/
+.idea/
+
+# Word reports (do not commit binary report files to source repo)
+*.docx
