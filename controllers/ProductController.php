@@ -1,7 +1,8 @@
 <?php
 
 /**
- * ProductController - Handles product-related pages
+ * ProductController - Handles product-related pages, Cart and Search features
+ * Đợt 3: Bổ sung xử lý Giỏ hàng (Cart) và Tìm kiếm sản phẩm (Search)
  * Include model trước, sau đó include header -> view content -> footer
  */
 class ProductController
