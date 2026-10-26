@@ -6,7 +6,7 @@
  * =================================================================================
  * FILE NÀY CHỊU TRÁCH NHIỆM KẾT NỐI VỚI CƠ SỞ DỮ LIỆU MYSQL THÔNG QUA THƯ VIỆN PDO.
  * 
- * TẠI SAO DÙNG PDO (PHP Data Objects)? (Câu hỏi vấn đáp cực kỳ phổ biến):
+ * ƯU ĐIỂM CỦA PDO (PHP Data Objects):
  * 1. PDO hỗ trợ cơ chế Prepared Statement cực kỳ mạnh mẽ giúp bảo mật tối đa, chống SQL Injection 100%.
  * 2. PDO là hướng đối tượng (Object-Oriented), dễ bắt lỗi bằng cấu trúc try-catch.
  * 3. Hỗ trợ nhiều loại hệ quản trị CSDL khác nhau (MySQL, PostgreSQL, SQLite...), nếu sau này đổi CSDL chỉ cần sửa DSN.
@@ -19,32 +19,13 @@
 
 // 1. KHAI BÁO CÁC BIẾN CẤU HÌNH KẾT NỐI
 
-// Cấu hình chạy trên máy cá nhân cục bộ (Localhost - XAMPP)
+// Cấu hình môi trường phát triển (Localhost - XAMPP)
 $DB_HOST    = 'localhost';
 $DB_PORT    = 3306;
 $DB_NAME    = 'vab2026'; // Tên cơ sở dữ liệu MySQL của dự án
 $DB_USER    = 'root';           // Username mặc định của XAMPP
 $DB_PASS    = '';               // Mật khẩu mặc định của XAMPP là rỗng
 $DB_CHARSET = 'utf8mb4';        // Bảng mã hỗ trợ tiếng Việt đầy đủ và các icon Emoji
-
-
-// Cấu hình chạy thực tế trên Hosting Online (Alwaysdata)
-// $DB_HOST    = 'mysql-vabshop2026.alwaysdata.net';
-// $DB_PORT    = 3306;
-// $DB_NAME    = 'vabshop2026_db';
-// $DB_USER    = 'vabshop2026_user';
-// $DB_PASS    = '@Vygo1022';
-// $DB_CHARSET = 'utf8mb4';
-
-
-
-// Cấu hình chạy trên Hosting miễn phí (InfinityFree)
-// $DB_HOST    = 'sql309.infinityfree.com';
-// $DB_PORT    = 3306;
-// $DB_NAME    = 'if0_42254885_vabshop2026';
-// $DB_USER    = 'if0_42254885';
-// $DB_PASS    = 'lKJD0o3ILA9Li';
-// $DB_CHARSET = 'utf8mb4';
 
 
 /**

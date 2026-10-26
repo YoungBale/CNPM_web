@@ -14,7 +14,7 @@
  *    - Dịch từ tên trang tiện lợi (alias) sang Controller và Action tương ứng (thông qua bảng ánh xạ $pageMap).
  *    - Tự động nạp file Controller thích hợp, khởi tạo đối tượng Controller và chạy hàm (Action) xử lý.
  * 
- * ƯU ĐIỂM (Cần trả lời khi thầy hỏi):
+ * ƯU ĐIỂM CỦA KIẾN TRÚC FRONT CONTROLLER:
  * - Giúp quản lý tập trung: Cấu hình hệ thống, múi giờ, bảo mật đầu vào đều đặt ở đây, không cần lặp lại ở từng trang.
  * - Che giấu cấu trúc thư mục thật bên trong, giúp ứng dụng bảo mật hơn.
  * - Dễ dàng mở rộng route (đường dẫn) mới mà không làm ảnh hưởng các file khác.

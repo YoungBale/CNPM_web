@@ -7,7 +7,7 @@
  * Mọi Model khác trong hệ thống (như ProductModel, UserModel, OrderModel...) đều kế thừa 
  * (extends) từ lớp này để tái sử dụng các phương thức truy vấn nhanh gọn.
  * 
- * TẠI SAO PHẢI DÙNG CƠ CHẾ PREPARED STATEMENTS Ở ĐÂY? (Câu hỏi vấn đáp then chốt):
+ * NGUYÊN LÝ HOẠT ĐỘNG & BẢO MẬT CỦA PREPARED STATEMENTS:
  * 1. Khi gọi $this->conn->prepare($sql), câu lệnh SQL (chứa các dấu chấm hỏi đại diện '?' hoặc tham số hóa ':id')
  *    sẽ được gửi trước lên MySQL Server để biên dịch cấu trúc (phác thảo khung sườn của câu lệnh).
  * 2. Khi gọi $stmt->execute($params), các dữ liệu từ biến đầu vào mới được gửi lên sau và lấp đầy vào các vị trí '?'.
