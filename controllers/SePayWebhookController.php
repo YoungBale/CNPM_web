@@ -4,9 +4,9 @@
  * =================================================================================
  * CONTROLLER TIẾP NHẬN WEBHOOK TỰ ĐỘNG TỪ SEPAY (SePayWebhookController.php)
  * =================================================================================
- * ĐÂY LÀ ĐỈNH CAO CÔNG NGHỆ CỦA WEBSITE - TỰ ĐỘNG DUYỆT ĐƠN HÀNG KHI NHẬN TIỀN
+ * CƠ CHẾ TỰ ĐỘNG XÁC NHẬN ĐƠN HÀNG KHI NHẬN THANH TOÁN SEPAY
  * 
- * CƠ CHẾ HOẠT ĐỘNG (Bạn cần học thuộc lòng phần này để báo cáo với thầy):
+ * CƠ CHẾ HOẠT ĐỘNG CỦA SEPAY WEBHOOK:
  * 1. Khi khách hàng quét mã QR và chuyển khoản ngân hàng thành công.
  * 2. Ngân hàng báo biến động số dư -> Hệ thống SePay phát hiện giao dịch mới.
  * 3. SePay lập tức bắn một HTTP POST request chứa dữ liệu JSON (số tiền, nội dung chuyển khoản)
@@ -16,7 +16,7 @@
  * 6. Kiểm tra số tiền chuyển khoản có khớp với tổng tiền đơn hàng hay không.
  * 7. Tiến hành cập nhật trạng thái đơn hàng thành 'đã xác nhận' trong CSDL và gửi email cho khách.
  * 
- * CÁC CƠ CHẾ BẢO MẬT PHẢI GIẢI THÍCH CHO GIẢNG VIÊN:
+ * CÁC CƠ CHẾ BẢO MẬT (SECURITY SPECIFICATIONS):
  * A. Xác thực chữ ký HMAC-SHA256: Ngăn chặn hacker giả mạo SePay gửi request khống duyệt đơn hàng.
  *    - SePay gửi chữ ký qua header X-SePay-Signature.
  *    - Server PHP tự tính toán chữ ký dựa trên raw body của request và khóa bí mật Webhook Secret.

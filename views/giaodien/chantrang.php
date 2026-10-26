@@ -73,7 +73,7 @@
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <p>&copy; 2025 <a href="index.php?page=home">VAB</a> - Thời Trang Thể Thao. Tất cả quyền được bảo lưu.</p>
+            <p>&copy; 2026 <a href="index.php?page=home">VAB</a> - Thời Trang Thể Thao. Tất cả quyền được bảo lưu.</p>
         </div>
     </div>
 </footer>
