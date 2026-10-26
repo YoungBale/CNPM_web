@@ -6,7 +6,7 @@
  * LỚP NÀY CHỊU TRÁCH NHIỆM TƯƠNG TÁC VỚI BẢNG CSDL 'SANPHAM' VÀ 'QUANLYSP' (TỒN KHO).
  * Kế thừa lớp xl_database để sử dụng các hàm truy vấn PDO an toàn.
  * 
- * CÁC ĐIỂM CHÚ Ý KHI VẤN ĐÁP:
+ * CÁC KỸ THUẬT TỐI ƯU TRUY VẤN SQL ĐƯỢC ÁP DỤNG:
  * 1. LEFT JOIN: Dùng để kết nối bảng SANPHAM với DANHMUCSP, THUONGHIEU, THETHAO nhằm lấy thêm tên
  *    danh mục, tên thương hiệu, tên môn thể thao tương ứng trong 1 câu lệnh SELECT duy nhất.
  * 2. CASE WHEN: Dịch chuẩn hóa tên danh mục từ dữ liệu thô (ao -> Áo, quan -> Quần, giay -> Giày)

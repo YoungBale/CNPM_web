@@ -9,7 +9,7 @@
  * 3. Hàng sản phẩm thể thao ngẫu nhiên dạng Slider.
  * 4. Khu vực thương hiệu nổi bật (Nike, Adidas, Puma) với hiệu ứng Glassmorphism và Slogan tiếng Việt.
  * 
- * ĐIỂM CẦN TRẢ LỜI VẤN ĐÁP:
+ * THIẾT KẾ KIẾN TRÚC & TỐI ƯU HIỆU NĂNG GIAO DIỆN:
  * - Cách nhúng Header/Footer: Kiểm tra biến `$nhungTuController`. Nếu trang được chạy gián tiếp qua
  *   Front Controller index.php thì biến này đã được định nghĩa, ngược lại nếu mở trực tiếp file view
  *   thì hệ thống tự động gọi require/include dautrang.php và chantrang.php để giữ nguyên giao diện khung.
