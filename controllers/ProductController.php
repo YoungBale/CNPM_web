@@ -456,7 +456,7 @@ class ProductController
     /**
      * CHỨC NĂNG: ĐẶT HÀNG & THANH TOÁN (thanhToan)
      * ĐẦU VÀO: Các thông tin giao hàng POST lên từ Form thanh toán (Họ tên, SĐT, Địa chỉ, Email, Ghi chú, Phương thức thanh toán).
-     * CƠ CHẾ XỬ LÝ (Rất quan trọng cho vấn đáp):
+     * CƠ CHẾ XỬ LÝ ĐẶT HÀNG & THANH TOÁN (ORDER WORKFLOW):
      * 1. Kiểm tra đăng nhập: Khách hàng bắt buộc phải đăng nhập thì mới được thanh toán (chống đơn ảo).
      * 2. Lấy thông tin giỏ hàng từ `$_SESSION['giohang']`. Nếu trống, chuyển về giỏ hàng.
      * 3. Tính tổng tiền giỏ hàng (tổng giá sản phẩm * số lượng).
@@ -837,7 +837,7 @@ class ProductController
     /**
      * CHỨC NĂNG: AJAX KIỂM TRA TRẠNG THÁI ĐƠN HÀNG SEPAY (kiemtraTrangthaiSepay)
      * ĐẦU VÀO: Nhận mã đơn hàng qua AJAX (?order_id=).
-     * CƠ CHẾ HOẠT ĐỘNG (Câu hỏi vấn đáp cực kỳ hay):
+     * CƠ CHẾ HOẠT ĐỘNG AJAX POLLING:
      * 1. Khi khách hàng ở trang Quét mã QR, Javascript ở client sẽ gửi request AJAX tới hàm này mỗi 2-3 giây (Polling).
      * 2. Hàm này truy vấn CSDL để kiểm tra trạng thái đơn hàng (`TrangThaiDH`).
      * 3. Khi khách chuyển khoản thành công, SePay Webhook nhận được tiền sẽ bắn tín hiệu về cập nhật CSDL thành 'đã xác nhận' hoặc 'hoàn thành'.

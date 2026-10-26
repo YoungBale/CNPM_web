@@ -12,12 +12,21 @@
  *   + amount: Số tiền của đơn hàng (bắt buộc đúng từng đồng để SePay khớp tiền).
  *   + addInfo: Nội dung chuyển khoản (bắt buộc ghi đúng cú pháp VABORD[MaDonHang]).
  * 
+<<<<<<< HEAD
  * CƠ CHẾ AJAX POLLING (Hỏi đáp vấn đáp):
  * - Giáo viên hỏi: "Làm sao trang web biết khi nào khách chuyển khoản thành công để chuyển trang?"
  *   + Trả lời: "Hệ thống sử dụng cơ chế Polling (thăm dò ý kiến). Javascript ở client (cuối file) 
  *     sẽ dùng hàm setInterval() để tự động gọi AJAX fetch ngầm đến API `kiemtraTrangthaiSepay` 
  *     mỗi 3 giây. Nếu database trả về trạng thái đã xác nhận (do SePay Webhook cập nhật trước đó),
  *     Javascript sẽ dừng vòng lặp, hiển thị thông báo thành công và chuyển hướng người dùng."
+=======
+ * CƠ CHẾ ĐỒNG BỘ TRẠNG THÁI THANH TOÁN (AJAX POLLING WORKFLOW):
+ * - Hệ thống sử dụng cơ chế Polling định kỳ: Javascript ở phía client (cuối file)
+ *   sử dụng hàm setInterval() để định kỳ gửi yêu cầu AJAX ngầm đến endpoint `kiemtraTrangthaiSepay`
+ *   mỗi 3 giây. Khi webhook của cổng thanh toán đã ghi nhận giao dịch thành công vào cơ sở dữ liệu,
+ *   endpoint trả về kết quả 'confirmed', Javascript lập tức dừng vòng lặp polling, kích hoạt thông báo
+ *   thành công và điều hướng người dùng sang trang quản lý đơn hàng.
+>>>>>>> 82c2e0d1c4a868f06d3d8a32edd438771e74fad9
  */
 
 if (!isset($nhungTuController)) {

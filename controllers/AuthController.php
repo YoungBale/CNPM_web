@@ -7,7 +7,7 @@
  * Đăng nhập truyền thống, đăng ký tài khoản mới, tích hợp đăng nhập qua Google OAuth2
  * và đăng xuất khỏi hệ thống.
  * 
- * CÁC ĐIỂM CHÚ Ý KHI BẢO VỆ ĐỒ ÁN (Giảng viên hay hỏi):
+ * CÁC NGUYÊN TẮC BẢO MẬT & KIẾN TRÚC:
  * 1. Cơ chế bảo mật mật khẩu:
  *    - Khi đăng ký, mật khẩu KHÔNG ĐƯỢC lưu dưới dạng văn bản thô. Hệ thống sử dụng hàm
  *      `password_hash($matKhau, PASSWORD_DEFAULT)` để mã hóa mật khẩu thành chuỗi hash bảo mật.
@@ -167,7 +167,7 @@ class AuthController {
 
     /**
      * CHỨC NĂNG: ĐĂNG NHẬP THÔNG QUA TÀI KHOẢN GOOGLE (dangNhapGoogle)
-     * CƠ CHẾ HOẠT ĐỘNG (Câu hỏi bảo vệ đồ án hay):
+     * CƠ CHẾ HOẠT ĐỘNG (GOOGLE OAUTH2 WORKFLOW):
      * 1. Client sử dụng thư viện Javascript của Google hiển thị hộp thoại đăng nhập.
      * 2. Sau khi xác thực, Google trả về một chuỗi mã hóa an toàn gọi là 'Credential' (ID Token).
      * 3. Trình duyệt POST Credential này lên server PHP của chúng ta.
