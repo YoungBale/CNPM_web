@@ -1,8 +1,10 @@
 <?php
 
 /**
- * AdminController - Quản lý tất cả trang admin
- * Quản lý: Sản phẩm, Nhân viên, Đánh giá, Khách hàng, Voucher, Đơn hàng, Doanh thu
+ * =================================================================================
+ * CONTROLLER QUẢN TRỊ VIÊN (AdminController.php)
+ * =================================================================================
+ * Quản lý tổng thể phân hệ Admin: Dashboard, Sản phẩm, Danh mục, Đơn hàng, Doanh thu.
  */
 class AdminController
 {
