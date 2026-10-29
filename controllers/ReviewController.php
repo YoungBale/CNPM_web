@@ -1,6 +1,9 @@
 <?php
 /**
- * ReviewController - Handles customer reviews and admin review moderation
+ * =================================================================================
+ * CONTROLLER QUẢN LÝ ĐÁNH GIÁ (ReviewController.php)
+ * =================================================================================
+ * Xử lý đánh giá sản phẩm từ khách hàng và kiểm duyệt trong trang quản trị.
  */
 class ReviewController {
 
